@@ -706,8 +706,6 @@ body.cursor-click .cursor-dot { transform: translate(-50%,-50%) scale(.6); }
 .contact__v { color: rgba(255,255,255,.75); min-width: 0; overflow-wrap: break-word; line-height: 1.6; }
 .contact__v a { transition: color .15s; }
 .contact__v a:hover { color: #fff; }
-.contact__map { border-radius: var(--r); overflow: hidden; border: 1px solid var(--dark-line); }
-.contact__map iframe { display: block; }
 
 .contact__form-wrap {
   background: var(--dark-2); border: 1px solid var(--dark-line);
