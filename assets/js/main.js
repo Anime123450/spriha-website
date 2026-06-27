@@ -318,6 +318,57 @@
   })();
 
   /* ══════════════════════════════════════════════════════════════
+     SERVICES CAROUSEL
+  ══════════════════════════════════════════════════════════════ */
+  (function () {
+    var trackWrap = document.querySelector('.services__track-wrap');
+    var track = document.getElementById('svcTrack');
+    var prevBtn = document.getElementById('svcPrev');
+    var nextBtn = document.getElementById('svcNext');
+    if (!track || !trackWrap || !prevBtn || !nextBtn) return;
+
+    var cards = Array.prototype.slice.call(track.querySelectorAll('.svc'));
+    var currentIndex = 0;
+
+    function getVisible() {
+      var w = trackWrap.offsetWidth;
+      if (w < 480) return 1;
+      if (w < 768) return 2;
+      if (w < 1080) return 3;
+      return 4;
+    }
+
+    function updateCarousel() {
+      var visibleCount = getVisible();
+      var gap = 14;
+      var cardW = Math.floor((trackWrap.offsetWidth - gap * (visibleCount - 1)) / visibleCount);
+      cards.forEach(function (c) { c.style.width = cardW + 'px'; });
+      var maxIndex = cards.length - visibleCount;
+      if (currentIndex > maxIndex) currentIndex = maxIndex;
+      var offset = currentIndex * (cardW + gap);
+      track.style.transform = 'translateX(-' + offset + 'px)';
+      prevBtn.disabled = currentIndex <= 0;
+      nextBtn.disabled = currentIndex >= maxIndex;
+    }
+
+    prevBtn.addEventListener('click', function () {
+      if (currentIndex > 0) { currentIndex--; updateCarousel(); }
+    });
+    nextBtn.addEventListener('click', function () {
+      var maxIndex = cards.length - getVisible();
+      if (currentIndex < maxIndex) { currentIndex++; updateCarousel(); }
+    });
+
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(updateCarousel, 80);
+    });
+
+    updateCarousel();
+  })();
+
+  /* ══════════════════════════════════════════════════════════════
      INFINITE MARQUEE — DUPLICATE TRACK CONTENT
   ══════════════════════════════════════════════════════════════ */
   if (!reduceMotion) {
