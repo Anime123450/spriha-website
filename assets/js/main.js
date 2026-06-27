@@ -196,10 +196,9 @@
     var dotsWrap = document.getElementById('slideDots');
     var prevBtn = document.getElementById('slidePrev');
     var nextBtn = document.getElementById('slideNext');
-    var curEl = document.getElementById('sliderCur');
     if (slides.length < 2) return;
 
-    var current = 0, timer = null, INTERVAL = 6500;
+    var current = 0, timer = null, INTERVAL = 3000;
 
     var dots = slides.map(function (_, i) {
       var b = document.createElement('button');
@@ -212,17 +211,12 @@
       return b;
     });
 
-    function updateCounter(n) {
-      if (curEl) curEl.textContent = ('0' + (n + 1)).slice(-2);
-    }
-
     function go(n, user) {
       slides[current].classList.remove('is-active');
       dots[current].classList.remove('is-active');
       current = (n + slides.length) % slides.length;
       slides[current].classList.add('is-active');
       dots[current].classList.add('is-active');
-      updateCounter(current);
       if (user) restart();
     }
     function next() { go(current + 1); }

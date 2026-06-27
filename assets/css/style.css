@@ -96,8 +96,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ── Custom cursor ─────────────────────────────────────────────── */
-body { cursor: none; }
-a, button, [role="button"], .js-magnetic, .svc, .feature, .equip, .ind-card { cursor: none; }
+*, *::before, *::after { cursor: none !important; }
 
 .cursor-dot, .cursor-ring {
   position: fixed; border-radius: 50%; pointer-events: none;
@@ -117,7 +116,7 @@ body.cursor-hover .cursor-dot { width: 14px; height: 14px; }
 body.cursor-hover .cursor-ring { width: 56px; height: 56px; border-color: rgba(226,27,34,.35); }
 body.cursor-click .cursor-dot { transform: translate(-50%,-50%) scale(.6); }
 @media (pointer: coarse) {
-  body, a, button { cursor: auto; }
+  *, *::before, *::after { cursor: auto !important; }
   .cursor-dot, .cursor-ring { display: none; }
 }
 
