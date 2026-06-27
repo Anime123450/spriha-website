@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spriha Associate — Industrial Electronics Repair &amp; Automation Solutions</title>
+  <meta name="description" content="Spriha Associate is a trusted industrial electronics repair centre in Vadodara — component-level repair of drives, PCBs, HMIs and automation boards, fast and warranted." />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <svg class="preloader__svg" viewBox="0 0 200 200" fill="none">
+        <path class="pl-path" d="M100 10 L100 50 L140 50 L140 90 L180 90" stroke="#e21b22" stroke-width="1.5" stroke-dasharray="200" stroke-dashoffset="200"/>
+        <path class="pl-path" d="M100 10 L100 50 L60 50 L60 90 L20 90" stroke="#e21b22" stroke-width="1.5" stroke-dasharray="200" stroke-dashoffset="200"/>
+        <path class="pl-path" d="M20 90 L20 150 L60 150 L60 190 L100 190" stroke="#e21b22" stroke-width="1.5" stroke-dasharray="200" stroke-dashoffset="200"/>
+        <path class="pl-path" d="M180 90 L180 150 L140 150 L140 190 L100 190" stroke="#e21b22" stroke-width="1.5" stroke-dasharray="200" stroke-dashoffset="200"/>
+        <rect class="pl-chip" x="76" y="86" width="48" height="28" rx="4" fill="none" stroke="#e21b22" stroke-width="1.5" stroke-dasharray="152" stroke-dashoffset="152"/>
+        <circle cx="100" cy="10" r="4" fill="#e21b22" class="pl-dot"/>
+        <circle cx="100" cy="190" r="5" fill="#e21b22" class="pl-dot"/>
+        <circle cx="20" cy="90" r="4" fill="#e21b22" class="pl-dot"/>
+        <circle cx="180" cy="90" r="4" fill="#e21b22" class="pl-dot"/>
+      </svg>
+      <div class="preloader__logo">SPRIHA<span>ASSOCIATE</span></div>
+      <div class="preloader__track"><div class="preloader__fill" id="preloaderFill"></div></div>
+      <span class="preloader__pct" id="preloaderPct">0%</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Utility bar -->
+  <div class="utilitybar">
+    <div class="container utilitybar__inner">
+      <span class="utilitybar__tag">
+        <span class="utilitybar__pulse" aria-hidden="true"></span>
+        Most trusted industrial electronics repairing service &mdash; Vadodara, Gujarat
+      </span>
+      <div class="utilitybar__links">
+        <a href="tel:+919712800416">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01z"/></svg>
+          +91 97128 00416
+        </a>
+        <span class="sep" aria-hidden="true"></span>
+        <a href="mailto:spriha.service@gmail.com">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          spriha.service@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Spriha Associate home">
+        <img class="brand__mark" src="assets/img/logo/loder.png" alt="Spriha Associate logo" />
+        <span class="brand__name">SPRIHA<span>ASSOCIATE</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#bench">Equipment</a>
+        <a href="#process">Process</a>
+        <a href="#brands">Brands</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--primary header__cta js-magnetic" href="https://api.whatsapp.com/send?phone=919712800416&amp;text=." target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.94A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7z"/></svg>
+        Get a quote
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#bench">Equipment</a>
+      <a href="#process">Process</a>
+      <a href="#brands">Brands</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=919712800416&amp;text=." target="_blank" rel="noopener">Get a quote</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" aria-label="Featured">
+      <div class="slider" id="heroSlider">
+        <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+        <ul class="slides">
+
+          <li class="slide is-active">
+            <div class="slide__media" style="background-image:url(assets/img/banner/hero-1.jpg)"></div>
+            <div class="slide__vignette"></div>
+            <div class="container slide__inner">
+              <div class="slide__copy">
+                <div class="slide__eyebrow">
+                  <span class="eyebrow-chip">Industrial Electronics Repair</span>
+                </div>
+                <h1 class="slide__h1">We bring dead<br /><em>industrial electronics</em><br />back to life.</h1>
+                <p class="slide__lead">Component-level repair of drives, PCBs, HMIs and automation boards — fast, warranted and low-cost.</p>
+                <div class="slide__actions">
+                  <a class="btn btn--primary btn--lg js-magnetic" href="https://api.whatsapp.com/send?phone=919712800416&amp;text=." target="_blank" rel="noopener">Get a repair quote</a>
+                  <a class="btn btn--outline btn--lg" href="#services">View our services</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="slide__media" style="background-image:url(https://images.unsplash.com/photo-1562408590-e32931084e23?w=1920&q=80&auto=format&fit=crop)"></div>
+            <div class="slide__vignette"></div>
+            <div class="container slide__inner">
+              <div class="slide__copy">
+                <div class="slide__eyebrow"><span class="eyebrow-chip">PCB &amp; Board Repair</span></div>
+                <h1 class="slide__h1">Any board —<br /><em>traced to the component,</em><br />then repaired.</h1>
+                <p class="slide__lead">15+ years repairing industrial electronic boards, backed by a wide in-house stock of replacement parts.</p>
+                <div class="slide__actions">
+                  <a class="btn btn--primary btn--lg js-magnetic" href="https://api.whatsapp.com/send?phone=919712800416&amp;text=." target="_blank" rel="noopener">Send a board for repair</a>
+                  <a class="btn btn--outline btn--lg" href="#bench">See our equipment</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="slide__media" style="background-image:url(https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?w=1920&q=80&auto=format&fit=crop)"></div>
+            <div class="slide__vignette"></div>
+            <div class="container slide__inner">
+              <div class="slide__copy">
+                <div class="slide__eyebrow"><span class="eyebrow-chip">Industrial Automation Solutions</span></div>
+                <h1 class="slide__h1">Keeping your<br /><em>plant running</em><br />around the clock.</h1>
+                <p class="slide__lead">Trusted by teams at Panasonic, Essar, IOCL and L&amp;T for reliable automation repair and support.</p>
+                <div class="slide__actions">
+                  <a class="btn btn--primary btn--lg js-magnetic" href="#contact">Talk to an engineer</a>
+                  <a class="btn btn--outline btn--lg" href="#about">About Spriha</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <button class="slider__arrow slider__arrow--prev" id="slidePrev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="15,18 9,12 15,6"/></svg>
+        </button>
+        <button class="slider__arrow slider__arrow--next" id="slideNext" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="9,18 15,12 9,6"/></svg>
+        </button>
+        <div class="slider__dots" id="slideDots" role="tablist" aria-label="Choose slide"></div>
+        <div class="slider__counter" aria-hidden="true">
+          <span class="slider__cur" id="sliderCur">01</span>
+          <span class="slider__div">/</span>
+          <span class="slider__tot">03</span>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-track"><div class="hero__scroll-thumb"></div></div>
+      </div>
+    </section>
+
+    <!-- ═══ TRUST STRIP ═══ -->
+    <section class="trust" aria-label="Clients we serve">
+      <div class="container trust__inner">
+        <p class="trust__label">Trusted by industry leaders</p>
+        <ul class="trust__logos">
+          <li><img src="assets/img/logo/pana.jpg" alt="Panasonic" /></li>
+          <li><img src="assets/img/logo/essar.jpg" alt="Essar" /></li>
+          <li><img src="assets/img/logo/iocl.png" alt="Indian Oil (IOCL)" /></li>
+          <li><img src="assets/img/logo/lt.jpg" alt="Larsen &amp; Toubro" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="about section" id="about">
+      <div class="container about__inner">
+        <div class="about__media" data-reveal="fade-right">
+          <div class="about__frame">
+            <img src="assets/img/banner/about.jpg" alt="Spriha engineer repairing an industrial PCB" />
+            <div class="about__img-glow" aria-hidden="true"></div>
+          </div>
+          <div class="about__badge">
+            <strong>15+</strong>
+            <span>Years of<br />experience</span>
+          </div>
+          <div class="about__pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div><strong>5,000+</strong><span>Boards repaired</span></div>
+          </div>
+        </div>
+
+        <div class="about__copy" data-reveal="fade-left">
+          <p class="eyebrow">Who we are</p>
+          <h2 class="section__title">From micro components to macro automation, we keep your plant running.</h2>
+          <p>Spriha Associate is one of the leading industrial electronics equipment repairing centres and solution providers for industrial automation. We repair any type of industrial electronic board.</p>
+          <p>Using state-of-the-art equipment, our technicians and engineers troubleshoot problems down to the component level. We maintain a wide stock of replacement parts to ensure quick service, specialising in PCB repair that is fast, warranted and low-cost.</p>
+          <ul class="about__points">
+            <li><span class="tick" aria-hidden="true">&#10003;</span>Component-level fault tracing, not board swapping</li>
+            <li><span class="tick" aria-hidden="true">&#10003;</span>Wide in-house stock of replacement parts</li>
+            <li><span class="tick" aria-hidden="true">&#10003;</span>Warranted PCB repair at low cost</li>
+            <li><span class="tick" aria-hidden="true">&#10003;</span>Engineers trained on the latest test equipment</li>
+          </ul>
+          <div class="about__actions">
+            <a class="btn btn--primary js-magnetic" href="#services">Explore our services</a>
+            <a class="link-arrow" href="#contact">Talk to an engineer &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES (dark) ═══ -->
+    <section class="services section section--dark" id="services">
+      <div class="services__grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__head" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--center eyebrow--light">What we repair</p>
+          <h2 class="section__title section__title--center section__title--light">Complete industrial repair services.</h2>
+          <p class="section__intro section__intro--muted">If it controls, drives, senses or powers a machine, we can diagnose and repair it — with effective, timely delivery.</p>
+        </header>
+        <div class="services__grid">
+          <article class="svc" data-reveal="fade-up" style="--d:0ms"><span class="svc__no">01</span><h3>Drive Repair Services</h3><p>AC drives, DC drives, servo drives and servo motor repairs with timely delivery.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:60ms"><span class="svc__no">02</span><h3>VFD Repair Services</h3><p>Variable frequency drive diagnosis and repair to keep your motors running.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:120ms"><span class="svc__no">03</span><h3>Card Repair Services</h3><p>PLC, DCS, welding-machine and Siemens PLC cards repaired to spec.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:180ms"><span class="svc__no">04</span><h3>Board Repairing Services</h3><p>Interface boards, analog I/O boards and digital I/O boards.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:0ms"><span class="svc__no">05</span><h3>HMI Customised Services</h3><p>HMI repair, maintenance and testing services for operator panels.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:60ms"><span class="svc__no">06</span><h3>Instrumentation Repair</h3><p>Flow meters, transmitters, ultrasonic &amp; magnetic flow and level meters.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:120ms"><span class="svc__no">07</span><h3>Power Supply Repair</h3><p>SMPS and industrial power supply repair for stable, clean power.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:180ms"><span class="svc__no">08</span><h3>Display Units Repair</h3><p>Repair of industrial display units, sourced and tested in-house.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:0ms"><span class="svc__no">09</span><h3>Soft Starter Repair</h3><p>Soft starter fault diagnosis and component-level repair.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:60ms"><span class="svc__no">10</span><h3>Logic Module Repair</h3><p>Logic module repair from a team trusted across Indian industry.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:120ms"><span class="svc__no">11</span><h3>Valve Positioner Repair</h3><p>Valve positioner repair services for precise process control.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:180ms"><span class="svc__no">12</span><h3>Flame Monitor Repair</h3><p>Flame monitor repair to keep burner-management systems safe.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:0ms"><span class="svc__no">13</span><h3>Industrial Computer Repair</h3><p>Industrial PC and panel computer repair for the plant floor.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:60ms"><span class="svc__no">14</span><h3>Controller Repair</h3><p>Temperature controller and PID controller repair services.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:120ms"><span class="svc__no">15</span><h3>Thyristor Control Module</h3><p>Thyristor control module repair from a leading Vadodara provider.</p><span class="svc__arrow">&#8599;</span></article>
+          <article class="svc" data-reveal="fade-up" style="--d:180ms"><span class="svc__no">16</span><h3>Stepper Drive Repair</h3><p>Stepper drive diagnosis and repair for precise motion systems.</p><span class="svc__arrow">&#8599;</span></article>
+        </div>
+        <div class="services__cta" data-reveal="fade-up">
+          <p>Not sure which service your equipment needs? Send us a photo of the board.</p>
+          <a class="btn btn--primary js-magnetic" href="https://api.whatsapp.com/send?phone=919712800416&amp;text=." target="_blank" rel="noopener">Ask on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ STATS ═══ -->
+    <section class="stats" aria-label="Spriha Associate by the numbers">
+      <div class="stats__bg" style="background-image:url(https://images.unsplash.com/photo-1581090465980-58ea88b43443?w=1920&q=70&auto=format&fit=crop)" aria-hidden="true"></div>
+      <div class="stats__overlay" aria-hidden="true"></div>
+      <div class="container stats__inner">
+        <div class="stat" data-reveal="fade-up" style="--d:0ms">
+          <div class="stat__ring-wrap">
+            <svg class="stat__ring" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="4"/><circle cx="40" cy="40" r="34" fill="none" stroke="#e21b22" stroke-width="4" stroke-dasharray="213.6" stroke-dashoffset="213.6" class="stat__arc" data-full="213.6"/></svg>
+          </div>
+          <div class="stat__body">
+            <span class="stat__num" data-count="50">0</span><span class="stat__plus">+</span>
+            <p class="stat__label">Product types mastered</p>
+          </div>
+        </div>
+        <div class="stat" data-reveal="fade-up" style="--d:100ms">
+          <div class="stat__ring-wrap">
+            <svg class="stat__ring" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="4"/><circle cx="40" cy="40" r="34" fill="none" stroke="#e21b22" stroke-width="4" stroke-dasharray="213.6" stroke-dashoffset="213.6" class="stat__arc" data-full="213.6"/></svg>
+          </div>
+          <div class="stat__body">
+            <span class="stat__num" data-count="150">0</span><span class="stat__plus">+</span>
+            <p class="stat__label">Clients served</p>
+          </div>
+        </div>
+        <div class="stat" data-reveal="fade-up" style="--d:200ms">
+          <div class="stat__ring-wrap">
+            <svg class="stat__ring" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="4"/><circle cx="40" cy="40" r="34" fill="none" stroke="#e21b22" stroke-width="4" stroke-dasharray="213.6" stroke-dashoffset="213.6" class="stat__arc" data-full="213.6"/></svg>
+          </div>
+          <div class="stat__body">
+            <span class="stat__num" data-count="135">0</span><span class="stat__plus">+</span>
+            <p class="stat__label">Satisfied clients</p>
+          </div>
+        </div>
+        <div class="stat" data-reveal="fade-up" style="--d:300ms">
+          <div class="stat__ring-wrap">
+            <svg class="stat__ring" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="4"/><circle cx="40" cy="40" r="34" fill="none" stroke="#e21b22" stroke-width="4" stroke-dasharray="213.6" stroke-dashoffset="213.6" class="stat__arc" data-full="213.6"/></svg>
+          </div>
+          <div class="stat__body">
+            <span class="stat__num" data-count="5000">0</span><span class="stat__plus">+</span>
+            <p class="stat__label">Boards repaired</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ INDUSTRIES ═══ -->
+    <section class="industries section" id="industries">
+      <div class="container">
+        <header class="section__head" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--center">Industries we serve</p>
+          <h2 class="section__title section__title--center">Powering India's critical industries.</h2>
+          <p class="section__intro">Our repair expertise keeps machines running across the most demanding industrial environments in India.</p>
+        </header>
+        <div class="industries__grid">
+          <div class="ind-card" data-reveal="fade-up" style="--d:0ms">
+            <div class="ind-card__img" style="background-image:url(https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&q=80&auto=format&fit=crop)"></div>
+            <div class="ind-card__glass">
+              <span class="ind-card__num">01</span>
+              <h3>Oil &amp; Gas</h3>
+              <p>Instrumentation, flow meters, transmitters and control systems for refineries and pipelines.</p>
+              <span class="ind-card__link">Learn more &rarr;</span>
+            </div>
+          </div>
+          <div class="ind-card" data-reveal="fade-up" style="--d:100ms">
+            <div class="ind-card__img" style="background-image:url(https://images.unsplash.com/photo-1717386255773-1e3037c81788?w=700&q=80&auto=format&fit=crop)"></div>
+            <div class="ind-card__glass">
+              <span class="ind-card__num">02</span>
+              <h3>Manufacturing</h3>
+              <p>VFDs, servo drives, PLCs and HMIs for production lines and assembly plants.</p>
+              <span class="ind-card__link">Learn more &rarr;</span>
+            </div>
+          </div>
+          <div class="ind-card" data-reveal="fade-up" style="--d:200ms">
+            <div class="ind-card__img" style="background-image:url(https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?w=700&q=80&auto=format&fit=crop)"></div>
+            <div class="ind-card__glass">
+              <span class="ind-card__num">03</span>
+              <h3>Power &amp; Energy</h3>
+              <p>SMPS, thyristor modules and power electronics for generation and distribution.</p>
+              <span class="ind-card__link">Learn more &rarr;</span>
+            </div>
+          </div>
+          <div class="ind-card" data-reveal="fade-up" style="--d:300ms">
+            <div class="ind-card__img" style="background-image:url(https://images.unsplash.com/photo-1562408590-e32931084e23?w=700&q=80&auto=format&fit=crop)"></div>
+            <div class="ind-card__glass">
+              <span class="ind-card__num">04</span>
+              <h3>Electronics &amp; Tech</h3>
+              <p>PCB-level repairs, IC testing, and complex multi-layer board diagnostics.</p>
+              <span class="ind-card__link">Learn more &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EQUIPMENT ═══ -->
+    <section class="bench section section--tint" id="bench">
+      <div class="container">
+        <header class="section__head" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--center">Our equipment</p>
+          <h2 class="section__title section__title--center">The instruments behind every repair.</h2>
+          <p class="section__intro">Component-level work needs lab-grade gear. This is what sits on our bench.</p>
+        </header>
+        <div class="bench__grid">
+          <article class="equip js-tilt" data-reveal="zoom" style="--d:0ms">
+            <div class="equip__img"><img src="assets/img/gallery/smd-rework-station.jpg" alt="SMD re-work station" loading="lazy" /></div>
+            <div class="equip__cap">
+              <span class="equip__tag">Rework</span>
+              <h3>SMD Re-work Station</h3>
+              <p>Precision rework of surface-mount components without lifting pads.</p>
+            </div>
+          </article>
+          <article class="equip js-tilt" data-reveal="zoom" style="--d:80ms">
+            <div class="equip__img"><img src="assets/img/gallery/regulated.jpg" alt="Regulated bench power supply" loading="lazy" /></div>
+            <div class="equip__cap">
+              <span class="equip__tag">Power</span>
+              <h3>Regulated Bench Power Supply</h3>
+              <p>Multi-output supply for safe powered fault testing.</p>
+            </div>
+          </article>
+          <article class="equip js-tilt" data-reveal="zoom" style="--d:160ms">
+            <div class="equip__img"><img src="assets/img/gallery/digital-ic-tester.jpg" alt="Universal IC tester" loading="lazy" /></div>
+            <div class="equip__cap">
+              <span class="equip__tag">Testing</span>
+              <h3>Universal IC Tester &amp; Programmer</h3>
+              <p>Verifies and reprograms ICs to confirm the real fault.</p>
+            </div>
+          </article>
+          <article class="equip js-tilt" data-reveal="zoom" style="--d:240ms">
+            <div class="equip__img"><img src="assets/img/gallery/7000.jpeg" alt="Digital oscilloscope" loading="lazy" /></div>
+            <div class="equip__cap">
+              <span class="equip__tag">Signal</span>
+              <h3>Digital Oscilloscopes</h3>
+              <p>Reads live signals to trace faults across every stage.</p>
+            </div>
+          </article>
+          <article class="equip js-tilt" data-reveal="zoom" style="--d:320ms">
+            <div class="equip__img"><img src="assets/img/gallery/functiongen.jpg" alt="Digital function generator" loading="lazy" /></div>
+            <div class="equip__cap">
+              <span class="equip__tag">Validation</span>
+              <h3>Digital Function Generator</h3>
+              <p>Injects known signals to validate every repaired stage.</p>
+            </div>
+          </article>
+          <article class="equip js-tilt" data-reveal="zoom" style="--d:400ms">
+            <div class="equip__img"><img src="https://images.unsplash.com/photo-1631377153566-b294bfd5f9f4?w=600&q=80&auto=format&fit=crop" alt="LCR meter and component tester" loading="lazy" /></div>
+            <div class="equip__cap">
+              <span class="equip__tag">Component</span>
+              <h3>LCR Meter &amp; ESR Tester</h3>
+              <p>Precisely measures inductance, capacitance and resistance to identify failed passive components.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROCESS ═══ -->
+    <section class="process section" id="process">
+      <div class="container">
+        <header class="section__head" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--center">How a repair flows</p>
+          <h2 class="section__title section__title--center">Five steps from dead board to back online.</h2>
+        </header>
+        <div class="process__track">
+          <div class="process__spine" aria-hidden="true"></div>
+          <div class="step-v" data-reveal="fade-right" style="--d:0ms">
+            <div class="step-v__num">01</div>
+            <div class="step-v__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            </div>
+            <div class="step-v__body">
+              <h3>Receive &amp; log</h3>
+              <p>Your board arrives, is logged and matched to its make and model. Every unit gets a unique repair ticket.</p>
+            </div>
+          </div>
+          <div class="step-v" data-reveal="fade-right" style="--d:80ms">
+            <div class="step-v__num">02</div>
+            <div class="step-v__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div class="step-v__body">
+              <h3>Diagnose</h3>
+              <p>We trace the fault to the component before any work begins. No guesswork — just lab-grade diagnostics.</p>
+            </div>
+          </div>
+          <div class="step-v" data-reveal="fade-right" style="--d:160ms">
+            <div class="step-v__num">03</div>
+            <div class="step-v__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div class="step-v__body">
+              <h3>Repair</h3>
+              <p>Faulty components are replaced from our in-house stock with quality parts. SMD rework done with precision.</p>
+            </div>
+          </div>
+          <div class="step-v" data-reveal="fade-right" style="--d:240ms">
+            <div class="step-v__num">04</div>
+            <div class="step-v__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="step-v__body">
+              <h3>Test</h3>
+              <p>The board is powered, signal-tested and verified against spec with our oscilloscopes and function generators.</p>
+            </div>
+          </div>
+          <div class="step-v" data-reveal="fade-right" style="--d:320ms">
+            <div class="step-v__num">05</div>
+            <div class="step-v__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div class="step-v__body">
+              <h3>Return</h3>
+              <p>Repaired, warranted and delivered on time so your line gets back up and running with minimum downtime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHY CHOOSE US ═══ -->
+    <section class="why section section--tint" id="why">
+      <div class="container">
+        <header class="section__head" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--center">Why Spriha</p>
+          <h2 class="section__title section__title--center">Built to increase productivity and cut your costs.</h2>
+        </header>
+        <div class="why__grid">
+          <article class="feature js-tilt" data-reveal="fade-up" style="--d:0ms">
+            <div class="feature__icon"><img src="assets/img/gallery/icon1.png" alt="" aria-hidden="true" /></div>
+            <h3>Quality First</h3>
+            <p>We deliver the best quality work among all competitors — we believe in quality work and client satisfaction above all.</p>
+            <div class="feature__bar"></div>
+          </article>
+          <article class="feature js-tilt" data-reveal="fade-up" style="--d:80ms">
+            <div class="feature__icon"><img src="assets/img/gallery/icon2.png" alt="" aria-hidden="true" /></div>
+            <h3>Reliability</h3>
+            <p>We collect and analyse information about every product and its related equipment before the work starts.</p>
+            <div class="feature__bar"></div>
+          </article>
+          <article class="feature js-tilt" data-reveal="fade-up" style="--d:160ms">
+            <div class="feature__icon"><img src="assets/img/gallery/icon3.png" alt="" aria-hidden="true" /></div>
+            <h3>15+ Years Experience</h3>
+            <p>A massive 15 years of experience on the bench is what sets us apart from our competitors in the industry.</p>
+            <div class="feature__bar"></div>
+          </article>
+          <article class="feature js-tilt" data-reveal="fade-up" style="--d:240ms">
+            <div class="feature__icon"><img src="assets/img/gallery/icon4.png" alt="" aria-hidden="true" /></div>
+            <h3>Team Work</h3>
+            <p>We believe in team work — it lets us deliver on time and gives our service its consistency.</p>
+            <div class="feature__bar"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BRANDS ═══ -->
+    <section class="brands section" id="brands">
+      <div class="container">
+        <header class="section__head" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--center">Makes we service</p>
+          <h2 class="section__title section__title--center">We repair almost every major brand of industrial electronics.</h2>
+        </header>
+      </div>
+      <div class="marquee" data-marquee>
+        <div class="marquee__track">
+          <span>ABB</span><span>Allen Bradley</span><span>Baldor</span><span>Amtech Electronic</span>
+          <span>Endress + Hauser</span><span>Mettler Toledo</span><span>Magnetek</span><span>Nemic Lambda</span>
+          <span>Schneider Electric</span><span>Power One</span><span>Honeywell</span><span>Yokogawa</span>
+          <span>Yaskawa</span><span>Fuji</span>
+        </div>
+      </div>
+      <div class="marquee marquee--rev" data-marquee>
+        <div class="marquee__track">
+          <span>Reliance Electric</span><span>Siemens</span><span>Control Techniques</span><span>L&amp;T</span>
+          <span>Emerson</span><span>Omron</span><span>Danfoss</span><span>GE Fanuc</span>
+          <span>Cleveland Motion Controls</span><span>Toshiba</span><span>TECO</span><span>TB Wood's</span>
+          <span>SEW Eurodrive</span><span class="brands__more">+ many more</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA BAND ═══ -->
+    <section class="cta-band">
+      <div class="cta-band__bg" style="background-image:url(assets/img/banner/cta.jpg)" aria-hidden="true"></div>
+      <div class="cta-band__overlay" aria-hidden="true"></div>
+      <div class="container cta-band__inner">
+        <div data-reveal="fade-right">
+          <p class="eyebrow eyebrow--light">Ready when you are</p>
+          <h2>Got a faulty board?<br />Send it to the bench.</h2>
+          <p class="cta-band__sub">Quick, warranted, low-cost repair for industrial electronics across India.</p>
+        </div>
+        <div class="cta-band__actions" data-reveal="fade-left">
+          <a class="btn btn--primary btn--lg js-magnetic" href="https://api.whatsapp.com/send?phone=919712800416&amp;text=." target="_blank" rel="noopener">Message on WhatsApp</a>
+          <a class="btn btn--glass btn--lg" href="tel:+919712800416">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01z"/></svg>
+            Call +91 97128 00416
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT (dark) ═══ -->
+    <section class="contact section section--dark" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__info" data-reveal="fade-right">
+          <p class="eyebrow eyebrow--light">Contact</p>
+          <h2 class="section__title section__title--light">Let's get your equipment running.</h2>
+          <p class="contact__lead">Reach the bench directly. We'll diagnose the fault and quote you a quick, warranted repair.</p>
+          <ul class="contact__list">
+            <li>
+              <span class="contact__k">Address</span>
+              <span class="contact__v">13, Shree Sitaram Kutir Soc., near Sai Chokdi, Manjalpur, Vadodara, Gujarat 390011</span>
+            </li>
+            <li>
+              <span class="contact__k">Phone</span>
+              <span class="contact__v"><a href="tel:+919712800416">+91 97128 00416</a></span>
+            </li>
+            <li>
+              <span class="contact__k">Email</span>
+              <span class="contact__v">
+                <a href="mailto:spriha.service@gmail.com">spriha.service@gmail.com</a><br />
+                <a href="mailto:info.spriha@gmail.com">info.spriha@gmail.com</a>
+              </span>
+            </li>
+          </ul>
+          <div class="contact__map">
+            <iframe title="Spriha Associate location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.2406858345935!2d73.17601221495413!3d22.268870785339878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf52f4bb743b%3A0x147f2ecdd5961d69!2sSpriha%20Associate!5e0!3m2!1sen!2sin!4v1643202340166!5m2!1sen!2sin" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="contact__form-wrap" data-reveal="fade-left">
+          <form class="contact__form" id="repairForm" novalidate>
+            <p class="form__title">Request a repair quote</p>
+            <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Your name" required /></div>
+            <div class="field-row">
+              <div class="field"><label for="cf-phone">Phone</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91…" required /></div>
+              <div class="field"><label for="cf-company">Company</label><input id="cf-company" name="company" type="text" placeholder="Optional" /></div>
+            </div>
+            <div class="field"><label for="cf-equipment">Equipment / brand</label><input id="cf-equipment" name="equipment" type="text" placeholder="e.g. Siemens VFD, ABB drive card" /></div>
+            <div class="field"><label for="cf-message">Describe the fault</label><textarea id="cf-message" name="message" rows="4" placeholder="What's the equipment doing — or not doing?"></textarea></div>
+            <button class="btn btn--primary btn--block" type="submit">Send request</button>
+            <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="container site-footer__top">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#top" aria-label="Spriha Associate home">
+          <img class="brand__mark" src="assets/img/logo/loder.png" alt="Spriha Associate logo" />
+          <span class="brand__name">SPRIHA<span>ASSOCIATE</span></span>
+        </a>
+        <p>A trusted industrial electronics repair centre — bringing dead drives, PCBs, HMIs and automation boards back to life for over 15 years.</p>
+        <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=919712800416&amp;text=." target="_blank" rel="noopener">Contact us on WhatsApp</a>
+      </div>
+      <nav class="footer-col" aria-label="Services">
+        <h4>Repair lines</h4>
+        <a href="#services">Drive &amp; VFD repair</a>
+        <a href="#services">PLC / DCS card repair</a>
+        <a href="#services">HMI &amp; display repair</a>
+        <a href="#services">Instrumentation repair</a>
+        <a href="#services">Power supply repair</a>
+      </nav>
+      <nav class="footer-col" aria-label="Company">
+        <h4>Company</h4>
+        <a href="#about">About us</a>
+        <a href="#bench">Equipment</a>
+        <a href="#process">Our process</a>
+        <a href="#why">Why choose us</a>
+        <a href="#brands">Brands we service</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Reach us</h4>
+        <p class="footer-contact">13, Shree Sitaram Kutir Soc., near Sai Chokdi, Manjalpur, Vadodara, Gujarat 390011</p>
+        <a href="tel:+919712800416">+91 97128 00416</a>
+        <a href="mailto:spriha.service@gmail.com">spriha.service@gmail.com</a>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>&copy; <span id="year">2026</span> Spriha Associate. All rights reserved.</p>
+      <p>Industrial electronics repair &middot; Automation solutions &middot; Vadodara</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float -->
+  <a class="wa-float" href="https://api.whatsapp.com/send?phone=919712800416&amp;text=." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor"><path d="M19.05 4.94A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.78 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7zM12.04 20.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 018.23 8.24c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14 0-.31-.01-.47-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
