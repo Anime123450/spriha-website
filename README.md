@@ -1,6 +1,6 @@
 # Spriha Associate — Website Redesign
 
-A complete frontend redesign of the official website for **Spriha Associate**, an industrial electronics repair and automation solutions company based in Vadodara, Gujarat. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, no dependencies.
+A student project: a frontend redesign of the website for **Spriha Associate**, an industrial electronics repair and automation solutions company based in Vadodara, Gujarat. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, no dependencies.
 
 ---
 
@@ -12,9 +12,9 @@ A complete frontend redesign of the official website for **Spriha Associate**, a
 
 ## About the Project
 
-Spriha Associate has been repairing industrial electronics for over 15 years — drives, PCBs, HMIs, VFDs, PLCs, and more. The goal of this redesign was to give the company a website that looks as professional as their work. The old design was dated and didn't reflect the quality of service they provide.
+Spriha Associate has been repairing industrial electronics for over 15 years — drives, PCBs, HMIs, VFDs, PLCs, and more. The goal of this redesign was to give the company a refreshed website, since the old design looked dated.
 
-This version is built to feel modern, credible and conversion-focused — the kind of site that makes a plant manager trust you before they read a word.
+This version is a static single-page site with a number of scroll and hover animations and a contact form that opens WhatsApp.
 
 ---
 
@@ -37,7 +37,7 @@ This version is built to feel modern, credible and conversion-focused — the ki
 - **Scroll progress bar** — red gradient bar along the top of the page
 - **WhatsApp float button** — fixed bottom-right with pulse ring animation
 - **Contact form → WhatsApp** — form composes and opens a pre-filled WhatsApp message; no backend required
-- Fully **responsive** down to 320px
+- **Responsive** down to 320px
 - Respects **prefers-reduced-motion** — all animations disabled cleanly for accessibility
 
 ---
@@ -83,7 +83,7 @@ spriha-redesign/
 ├── README.md
 └── assets/
     ├── css/
-    │   └── style.css       # Complete stylesheet (~855 lines)
+    │   └── style.css       # Stylesheet (~855 lines)
     ├── js/
     │   └── main.js         # All interactivity (~510 lines)
     └── img/
